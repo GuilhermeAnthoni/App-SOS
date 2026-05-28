@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contato de Emergência</title>
+
+<style>
+body{
+  font-family: Arial;
+  background:#0f172a;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container{
+  background:#1e293b;
+  padding:30px;
+  border-radius:12px;
+  width:320px;
+}
+
+h2{
+  text-align:center;
+}
+
+input{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border:none;
+  border-radius:6px;
+}
+
+button{
+  width:100%;
+  margin-top:15px;
+  padding:12px;
+  background:#ef4444;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#dc2626;
+}
+
+.contact{
+  margin-top:15px;
+  padding:10px;
+  background:#334155;
+  border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Contato de Emergência</h2>
+
+<input type="text" id="nome" placeholder="Nome">
+
+<input type="text" id="telefone" placeholder="Telefone">
+
+<button onclick="salvarContato()">
+Salvar contato
+</button>
+
+<div id="lista"></div>
+
+</div>
+
+<script>
+
+function carregarContatos(){
+
+const lista = document.getElementById("lista");
+lista.innerHTML = "";
+
+let contatos =
+JSON.parse(localStorage.getItem("contatos")) || [];
+
+contatos.forEach(c => {
+
+lista.innerHTML +=
+`<div class="contact">
+${c.nome} - ${c.telefone}
+</div>`;
+
+});
+}
+
+function salvarContato(){
+
+let nome =
+document.getElementById("nome").value;
+
+let telefone =
+document.getElementById("telefone").value;
+
+if(!nome || !telefone){
+alert("Preencha todos os campos");
+return;
+}
+
+let contatos =
+JSON.parse(localStorage.getItem("contatos")) || [];
+
+contatos.push({nome,telefone});
+
+localStorage.setItem(
+"contatos",
+JSON.stringify(contatos)
+);
+
+document.getElementById("nome").value="";
+document.getElementById("telefone").value="";
+
+carregarContatos();
+
+}
+
+carregarContatos();
+
+</script>
+
+</body>
+</html>

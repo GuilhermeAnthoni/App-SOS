@@ -1,0 +1,232 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+
+  container: {
+    flex: 1,
+    backgroundColor: "#0f172a",
+    padding: 40
+  },
+
+  menuButton: {
+    position: "absolute",
+    top: 50,
+    left: 20,
+    zIndex: 2000,
+    backgroundColor: "#1e293b",
+    padding: 10,
+    borderRadius: 12
+  },
+
+  menuIcon: {
+    fontSize: 30,
+    color: "white"
+  },
+
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0,0,0,0.6)",
+    zIndex: 999
+  },
+
+  menu: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: 260,
+    height: "100%",
+    backgroundColor: "#1e293b",
+    paddingTop: 100,
+    paddingHorizontal: 25,
+    borderTopRightRadius: 25,
+    borderBottomRightRadius: 25
+  },
+
+  menuTitle: {
+    color: "white",
+    fontSize: 28,
+    marginBottom: 30,
+    fontWeight: "bold"
+  },
+
+  menuItem: {
+    paddingVertical: 18
+  },
+
+  menuText: {
+    color: "#cbd5f5",
+    fontSize: 18
+  },
+
+  closeButton: {
+    marginTop: 40
+  },
+
+  closeText: {
+    color: "#ef4444",
+    fontSize: 18,
+    fontWeight: "bold"
+  },
+
+  header: {
+    alignItems: "center",
+    marginTop: 40
+  },
+
+  logo: {
+    fontSize: 30,
+    fontWeight: "bold",
+    color: "#ffffff"
+  },
+
+  subtitle: {
+    color: "#94a3b8",
+    marginTop: 8
+  },
+
+  centerArea: {
+    alignItems: "center",
+    marginTop: 100
+  },
+
+  sosButton: {
+    width: 200,
+    height: 200,
+    borderRadius: 110,
+    backgroundColor: "#ef4444",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+
+  sosText: {
+    color: "#fff",
+    fontSize: 50,
+    fontWeight: "bold"
+  },
+
+  instruction: {
+    color: "#cbd5f5",
+    marginTop: 25,
+    fontSize: 16
+  },
+
+  footer: {
+    alignItems: "center",
+    marginTop: 10
+  },
+
+  footerText: {
+    color: "#64748b",
+    textAlign: "center"
+  },
+
+  input: {
+    backgroundColor: "#334155",
+    color: "#fff",
+    padding: 12,
+    borderRadius: 8,
+    marginTop: 20
+  },
+
+  addButton: {
+    backgroundColor: "#ef4444",
+    padding: 12,
+    borderRadius: 8,
+    alignItems: "center",
+    marginTop: 15
+  },
+
+  importButton: {
+    backgroundColor: "#2563eb",
+    padding: 12,
+    borderRadius: 8,
+    alignItems: "center",
+    marginTop: 10
+  },
+
+  buttonText: {
+    color: "#fff",
+    fontWeight: "bold"
+  },
+
+  contactRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 15,
+    backgroundColor: "#1e293b",
+    padding: 12,
+    borderRadius: 8
+  },
+
+  contactName: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold"
+  },
+
+  contactNumber: {
+    color: "#94a3b8",
+    marginTop: 4
+  },
+
+  removeContact: {
+    color: "#ef4444",
+    fontWeight: "bold"
+  },
+
+  backButton: {
+    marginTop: 40,
+    marginBottom: 40,
+    backgroundColor: "#ef4444",
+    padding: 12,
+    borderRadius: 8,
+    alignItems: "center"
+  },
+
+  card: {
+    backgroundColor: "#1e293b",
+    padding: 15,
+    borderRadius: 10,
+    marginTop: 15
+  },
+
+  cardTitle: {
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 8
+  },
+
+  cardText: {
+    color: "#cbd5e1",
+    fontSize: 14,
+    lineHeight: 22
+  },
+
+  videoCard: {
+    backgroundColor: "#1e293b",
+    padding: 18,
+    borderRadius: 12,
+    marginTop: 20
+  },
+
+  videoTitle: {
+    color: "#fff",
+    fontSize: 17,
+    fontWeight: "bold"
+  },
+
+  videoLink: {
+    color: "#60a5fa",
+    marginTop: 10,
+    fontSize: 15
+  }
+
+});
+
+export default styles;
